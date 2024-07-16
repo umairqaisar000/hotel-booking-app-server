@@ -1,0 +1,33 @@
+# Dependency directories
+node_modules/
+
+# TypeScript build output
+dist/
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# Environment variables file
+.env
+
+# Log files
+*.log
+
+# macOS specific files
+.DS_Store
+
+# npm debugging log file
+npm-debug.log*
+
+# Yarn logs
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+Thumbs.db
+.DS_Store?
+._*
+
+# Windows specific files
+Desktop.ini
