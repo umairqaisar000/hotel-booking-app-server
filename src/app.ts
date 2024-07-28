@@ -2,6 +2,7 @@ import dotenv from 'dotenv';
 import express, { Request, Response } from 'express';
 import mongoose from 'mongoose';
 import bookingRoutes from './routes/bookingRoutes';
+import hotelRoutes from './routes/hotelRoutes';
 import userRoutes from './routes/userRoutes';
 
 dotenv.config();
@@ -11,6 +12,7 @@ const app = express();
 app.use(express.json());
 app.use('/api/booking', bookingRoutes);
 app.use('/api/user', userRoutes);
+app.use('/api/hotels', hotelRoutes);
 
 app.get('/', (req: Request, res: Response) => {
     res.send('Welcome to the Hotel Booking API!');
