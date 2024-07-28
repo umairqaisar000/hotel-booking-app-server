@@ -29,7 +29,7 @@ const HotelSchema: Schema = new Schema({
     address: { type: String, required: true },
     phoneNumber: { type: String, required: true },
     email: { type: String, required: true },
-    rooms: mongoose.Types.DocumentArray<IRoom>
+    rooms: { type: [RoomSchema], default: [] }
 });
 
 const Hotel = mongoose.model<IHotel>('Hotel', HotelSchema);
