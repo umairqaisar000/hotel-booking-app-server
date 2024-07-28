@@ -1,6 +1,7 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
 interface IBooking extends Document {
+  _id: mongoose.Types.ObjectId;
   hotelName: string;
   guestName: string;
   checkIn: Date;
